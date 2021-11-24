@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="media-queries.css">
+</head>
+<body>
+	<div class="calculator-card">
+		<div class="tabs shadow">
+			<button id="normal-calculator-tab">Normal Calculator</button>
+			<button id="scientific-calculator-tab">Scientific Calculator</button>
+		</div>
+		<div class="calculator">
+			<input type="text" name="calculator-input" id="calculator-input" dir="rtl">
+			<table id="normal-calculator" class="hidden shadow">
+				<tr class="calculator-buttons">
+					<td>
+						<button>c</button>
+					</td>
+					<td>
+						<button>^</button>
+					</td>
+					<td>
+						<button style="font-size: 30px; padding: 1vh 1.6vh 1vh 1.6vh;">%</button>
+					</td>
+					<td>
+						<button class="special">+</button>
+					</td>
+				</tr>
+				<tr class="calculator-buttons">
+					<td>
+						<button>1</button>
+					</td>
+					<td>
+						<button>2</button>
+					</td>
+					<td>
+						<button>3</button>
+					</td>
+					<td>
+						<button class="special">&minus;</button>
+					</td>
+				</tr>
+				<tr class="calculator-buttons">
+					<td>
+						<button>4</button>
+					</td>
+					<td>
+						<button>5</button>
+					</td>
+					<td>
+						<button>6</button>
+					</td>
+					<td>
+						<!-- Multiply sign -->
+						<button class="special">&#215;</button>
+					</td>
+				</tr>
+				<tr class="calculator-buttons">
+					<td>
+						<button>7</button>
+					</td>
+					<td>
+						<button>8</button>
+					</td>
+					<td>
+						<button>9</button>
+					</td>
+					<td>
+						<button class="special">&divide;</button>
+					</td>
+				</tr>
+				<tr class="calculator-buttons">
+					<td>
+						<button>.&nbsp;</button>
+					</td>
+					<td>
+						<button>0</button>
+					</td>
+					<td>
+						<button class="special">+</button>
+					</td>
+					<td>
+						<button class="special">=</button>
+					</td>
+				</tr>
+			</table>
+			<table id="scientific-calculator" class="hidden">
+				<tr class="calculator-buttons" width="50">
+					<td>
+						<button>&nbsp;&nbsp;&Sqrt;&nbsp;&nbsp;</button>
+					</td>
+					<td>
+						<button>c</button>
+					</td>
+					<td>
+						<button>^</button>
+					</td>
+					<td>
+						<button style="font-size: 30px; padding: 1vh 1.6vh 1vh 1.6vh;">%</button>
+					</td>
+					<td>
+						<button class="special">+</button>
+					</td>
+				</tr>
+				<tr class="calculator-buttons">
+					<td>
+						<button>sin&nbsp;</button>
+					</td>
+					<td>
+						<button>1</button>
+					</td>
+					<td>
+						<button>2</button>
+					</td>
+					<td>
+						<button>3</button>
+					</td>
+					<td>
+						<button class="special">&#247;</button>
+					</td>
+				</tr>
+				<tr class="calculator-buttons">
+					<td>
+						<button>cos</button>
+					</td>
+					<td>
+						<button>4</button>
+					</td>
+					<td>
+						<button>5</button>
+					</td>
+					<td>
+						<button>6</button>
+					</td>
+					<!-- Multiplication Sign -->
+					<td>
+						<button class="special">&#215;</button>
+					</td>
+				</tr>
+				<tr class="calculator-buttons">
+					<td>
+						<button>tan&nbsp;</button>
+					</td>
+					<td>
+						<button>7</button>
+					</td>
+					<td>
+						<button>8</button>
+					</td>
+					<td>
+						<button>9</button>
+					</td>
+					<td>
+						<button class="special">&minus;</button>
+					</td>
+				</tr>
+				<tr class="calculator-buttons">
+					<td>
+						<button>&nbsp;&nbsp;&pi;&nbsp;&nbsp;</button>
+					</td>
+					<td colspan="2">
+						<button>&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;</button>
+					</td>
+					<td>
+						<button>.&nbsp;</button>
+					</td>
+					<td>
+						<button class="special">=</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<button class="theme-toggler" id="theme-toggler">Shuffle Background</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="scripts.js"></script>
+</html>
