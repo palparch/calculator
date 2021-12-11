@@ -59,12 +59,12 @@ scientificTab.onclick = function() {
 };
 
 $(document).keypress(function(event){
-    console.log(event.which);
-    //0
-    if(event.which == 48){
-      string += 0;
-      $("#calc").text(string);
-    }
+	console.log(event.which);
+	//0
+	if(event.which == 48){
+		string += 0;
+		$("#calc").text(string);
+	}
 });
 
 
