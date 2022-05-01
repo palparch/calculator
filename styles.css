@@ -1,141 +1,144 @@
 * {
-	outline-color: rgba(0, 255, 255, 1);
+  outline-color: cyan;
 }
 
 body {
-	display: flex;
-	justify-content: center;
-	background: url(images/0048.jpg);
-	align-items: center;
-	height: 100%;
-	overflow-y: hidden;
-	background-position: center !important;
-	background-size: cover;
+  background: url(images/0048.jpg);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  overflow-y: hidden;
+  background-position: center !important;
+  background-size: cover;
+  padding: 1rem;
 }
 
-/* Tabs */
-
 .tabs {
-	display: inline-block;
-	min-width: 50%;
+  display: inline-block;
 }
 
 .tabs button {
-	font-size: x-large;
-	border: none;
-	background: rgba(255, 255, 255, 0.5);
-	padding: 1vh;
-	margin-right: 1px;
-	color: inherit;
-	border-radius: 5px;
-}
-
-.tabs button:nth-child(1) {
-	float: left;
-}
-
-.tabs button:nth-child(2) {
-	float: right;
+  font-size: 1.2em;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0.5rem;
+  color: inherit;
+  border-radius: 0.35rem;
 }
 
 .tabs button:hover {
-	background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .tabs .tabs-active {
-	border-bottom: 5px solid midnightblue !important;
+  border-bottom: 5px solid midnightblue !important;
 }
 
 .tabs .tabs-active:hover {
-	background: rgba(255, 255, 255, 0.5) !important;
+  background: rgba(255, 255, 255, 0.5) !important;
 }
 
 .tabs .tabs-inactive {
-	background: rgba(150, 150, 150, 0.5) !important;
+  background: rgba(150, 150, 150, 0.5) !important;
 }
 
 .tabs .tabs-inactive:hover {
-	background: rgba(255, 255, 255, 0.7) !important;
+  background: rgba(255, 255, 255, 0.7) !important;
 }
-
-
-/* Calculator body */
 
 .calculator-card {
-	border: 1px grey;
-	border-radius: 10px;
-	padding: 20vh 13vh 20vh 13vh;
-	background: rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(5px);
-	max-height: 100%;
-}
-
-.calculator-card table {
-	display: flex;
-	justify-content: center;
+  border-radius: 0.5rem;
+  padding: 5rem 2.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .calculator input {
-	margin: auto;
-	width: 410px;
-	border: none;
-	border-radius: 25px;
-	line-height: 50px;
-	font-size: 20px;
-	/*outline: none;*/
-	padding: 0 12.5px 0 12.5px;
-	caret-color: transparent;
+  margin: auto;
+  width: 14em;
+  border: none;
+  border-radius: 25px;
+  line-height: 50px;
+  font-size: 1.5em;
+  /*outline: none;*/
+  padding: 0 12.5px 0 12.5px;
+  caret-color: transparent;
 }
 
-.calculator-buttons td button {
-	border: 1px grey;
-	border-radius: 10px;
-	padding: 1vh 2vh 1vh 2vh;
-	font-size: xx-large;
-	background: rgba(255, 255, 255, 0.5);
+.calculator-buttons {
+  display: -ms-grid;
+  display: grid;
+  max-width: 30rem;
 }
 
-.calculator-buttons td button:hover {
-	background: rgba(255, 255, 255, 0.7);
+.calculator-buttons p {
+  margin: 0;
+  padding: 0;
+}
+
+.calculator-buttons button {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1vw 2vw;
+  font-size: 2em;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0.15rem;
+}
+
+.calculator-buttons button:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.calculator-buttons #zero {
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / span 2;
 }
 
 .calculator-buttons .special {
-	background: rgba(0, 255, 255, 0.6);
+  background: rgba(0, 255, 255, 0.6);
 }
 
 .calculator-buttons .special:hover {
-	background: rgba(0, 255, 255, 0.8);
+  background: rgba(0, 255, 255, 0.8);
 }
 
-#scientific-calculator {
-	display: flex;	
+#scientific-calculator .calculator-buttons {
+  -ms-grid-columns: (minmax(5rem, 2fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(5rem, 2fr));
 }
 
-/* Theme Changer Button */
+#normal-calculator .calculator-buttons {
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+}
 
 .theme-toggler {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	padding: 5px 10px 5px 10px;
-	background: rgba(255, 255, 255, 0.8);
-	border: none;
-	border-radius: 8px;
-	font-size: large;
-	margin: 1vh;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 5px 10px 5px 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 8px;
+  font-size: large;
+  margin: 0.5rem;
 }
 
 .theme-toggler:hover {
-	background: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.65);
 }
 
-
-/* Re-usable components */
-
-.shadow {
-	box-shadow: 0 0 0.2px rgba(150,150,150,.1);
-}
-
+/* 
+	========
+	Utillity classes
+	========
+*/
 .hidden {
-	display: none !important;
+  display: none !important;
 }
+/*# sourceMappingURL=styles.css.map */

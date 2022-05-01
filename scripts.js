@@ -29,7 +29,8 @@ function scientificTabOpen() {
 };
 
 
-scientificTabOpen()
+// scientificTabOpen()
+normalTabOpen()
 
 var backgrounds = Array("0016.jpg" ,"0048.jpg", "0139.jpg", "0199.jpg", "0254.jpg", "0255.jpg", "Cool-Background-For-Laptop.jpg", "minimalist-desktop-5.jpg", "wallpapersden.com_macos-12-monterey-digital_1366x768.jpg");
 
